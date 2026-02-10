@@ -402,9 +402,9 @@ public class Swerve extends TunerSwerveDrivetrain implements Subsystem {
   }
 
   public boolean tooCloseToHub() {
-
     Translation2d turretPose =
-        stateCache.Pose
+        stateCache
+            .Pose
             .getTranslation()
             .plus(
                 TurretConstants.robotToTurretTransform
